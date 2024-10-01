@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D8BFD8;
+    background-image: url('https://www.transparenttextures.com/patterns/debut-light.png'); /* Textura de fundo */
+    background-repeat: repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #4B0082;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.produtos {
+    margin-top: 50px;
+    color: #4B0082;
+    font-size: 1.5em;
+}

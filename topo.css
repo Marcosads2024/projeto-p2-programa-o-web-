@@ -1,0 +1,105 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Fundo cinza claro */
+    color: #333; /* Texto cinza escuro */
+}
+
+/* Estilo do topo com imagem de fundo */
+.topo {
+    background-image: url('fotos/foto%20fotos.jpg'); /* Caminho da imagem corrigido */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 25px; /* Altura do topo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px; /* Espaçamento do título */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar legibilidade */
+}
+
+/* Estilo do título no topo */
+.topo h1 {
+    font-size: 4em;
+    color: #FF6347; /* Tom laranja vibrante */
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #333; /* Cor escura para contraste */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(137, 25, 182, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que os itens do menu se ajustem em telas pequenas */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Branco para o texto */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FF6347; /* Muda a cor para laranja no hover */
+}
+
+nav ul li a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #FF6347;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 15px;
+    }
+}
